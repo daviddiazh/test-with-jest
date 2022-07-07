@@ -1,0 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #cecece;
+    color: #333;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 500%;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #1b74e4;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 0;
+}
