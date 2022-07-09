@@ -4,8 +4,8 @@ export const FirstApp = ({ title, description }) => {
 
     return (
         <>
-            <h1>{ title }</h1>
-            {/* <p>{ description }</p> */}
+            <div data-testid='test-title'>{ title }</div>
+            <p>{ description }</p>
         </>
     )
 
@@ -13,4 +13,5 @@ export const FirstApp = ({ title, description }) => {
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
+    description: PropTypes.string
 }
