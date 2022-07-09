@@ -9,6 +9,7 @@ import { TestLocation } from './TestLocation';
 
 ReactDOM.createRoot( document.getElementById('root') ).render(
   <React.StrictMode>
-    <FirstApp title='Hola, soy David' />
+    {/* <FirstApp title='Hola, soy David' /> */}
+    <CounterApp value={100} />
   </React.StrictMode>
 )
