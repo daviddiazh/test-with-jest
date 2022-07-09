@@ -14,7 +14,9 @@ exports[`Pruebas de CounterApp Se debe hacer el match con el componente CounterA
   <button>
     - 1
   </button>
-  <button>
+  <button
+    aria-label="btn-reset"
+  >
     Reset
   </button>
 </div>

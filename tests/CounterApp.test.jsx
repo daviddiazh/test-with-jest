@@ -30,4 +30,22 @@ describe('Pruebas de CounterApp', ()  => {
 
     });
 
-})
+    test('Debe de decrementar con el boton de -1', () => {
+
+        render( <CounterApp value={value} /> );
+        fireEvent.click( screen.getByText('- 1') );
+        expect( screen.getByText('99') ).toBeTruthy();
+
+
+    });
+
+    test('Debe de resetear con el boton de Reset', () => {
+
+        render( <CounterApp value={value} /> );
+        //fireEvent.click( screen.getByText('Reset') );
+        fireEvent.click( screen.getByRole('button', { name: 'btn-reset' }) );
+        expect( screen.getByText('100') ).toBeTruthy();
+
+    })
+
+});
