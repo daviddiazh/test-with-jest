@@ -5,6 +5,7 @@ export const FirstApp = ({ title, description }) => {
     return (
         <>
             <div data-testid='test-title'>{ title }</div>
+            <h1 data-testid='test-title'>{ title }</h1>
             <p>{ description }</p>
         </>
     )
