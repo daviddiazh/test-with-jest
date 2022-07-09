@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react"
+import { fireEvent, render, screen } from "@testing-library/react"
 import { CounterApp } from "../src/CounterApp"
 
 describe('Pruebas de CounterApp', ()  => {
@@ -20,6 +20,14 @@ describe('Pruebas de CounterApp', ()  => {
 
         expect( screen.getByRole('heading', { level: 2 }).innerHTML ).toBe('100')
 
-    })
+    });
+
+    test('Debe de incrementar con el boton de +1', () => {
+
+        render( <CounterApp value={value} /> );
+        fireEvent.click( screen.getByText('+ 1') );
+        expect( screen.getByText('101') ).toBeTruthy();
+
+    });
 
 })
